@@ -1,0 +1,16 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div>
+  <lightning-card title="Expence Tracker">
+    <lightning-button variant="Brand" label="Add New Expense" title="Add Expense" onclick={showPopup}></lightning-button>
+    <lightning-button variant="destructive" label="Delete Selected Expense" title="Delete Expense" onclick={handleDelete}></lightning-button>
+   <lightning-datatable
+        key-field="Id"
+        data={tabledata}
+        columns={columns}
+        onrowselection={handlerowselection}
+        ></lightning-datatable>
+  </lightning-card>
+  </div>
+    
+</template>

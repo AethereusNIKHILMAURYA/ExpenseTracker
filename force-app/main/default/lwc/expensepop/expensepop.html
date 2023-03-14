@@ -1,0 +1,13 @@
+<template>
+    <lightning-modal-header label="New Expense"></lightning-modal-header>
+    <lightning-modal-body>
+      
+      <lightning-record-form
+        object-api-name="Expense__c"
+        fields={expenseFields}
+        columns="2"
+        onsuccess={closePopupSuccess}
+        oncancel={closePopup}>
+      </lightning-record-form>
+    </lightning-modal-body>
+  </template>
